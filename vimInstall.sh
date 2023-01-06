@@ -15,7 +15,7 @@ echo "alias ls='ls --color'" >> /root/.bashrc
 source /root/.bashrc
 
 #Prep for nvim config
-mkdir -p /root/.config/nvim
+mkdir -p /root/.config/
 
 #VimPlug install
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -25,3 +25,6 @@ curl -fsSL https://deb.nodesource.com/setup_19.x | bash - &&\
 apt-get install -y nodejs
 #Copy my Git repo with Nvim config
 #       TODO
+cd /root/.config/
+git clone https://github.com/melafir/nvim.git
+cd ~
