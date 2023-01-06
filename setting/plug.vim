@@ -26,5 +26,6 @@ endif
 call plug#begin()
 		Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 		Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
