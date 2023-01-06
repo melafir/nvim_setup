@@ -10,7 +10,7 @@ set signcolumn=yes
 set splitbelow
 set shell=bash
 colorscheme habamax
-set statusline=%t\ %=\ %Y\ buffers: %n - %{NumberOfBuffers()} %l-%c
+set statusline=%t\ %=\ %Y\ buffers:\ %n - %{NumberOfBuffers()}\ %l-%c
 
 so ~/.config/nvim/setting/plug.vim
 so ~/.config/nvim/setting/tabline.vim
@@ -24,7 +24,7 @@ function TermOpen()
 		terminal
 endfunction
 function NumberOfBuffers()
-  return len(getbufinfo({'buflisted'}:1))
+  return len(getbufinfo({'buflisted':1}))
 endfunction
 
 tnoremap <Esc> <C-\><C-n>
