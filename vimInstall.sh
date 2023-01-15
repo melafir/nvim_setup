@@ -3,7 +3,7 @@
 apt update -y
 
 #Install needes apps
-apt install -y git wget curl
+apt install -y git wget curl build-essential
 
 #Download & Install Nvim
 wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb
