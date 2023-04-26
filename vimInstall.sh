@@ -28,3 +28,7 @@ apt-get install -y nodejs
 cd /root/.config/
 git clone https://github.com/melafir/nvim.git
 cd ~
+# Git push config
+git config --global user.email "melektaus2019@gmail.com"
+git config --global user.name "Melxorn"
+# Git push via token https:\\GIT_TOREN@github.com/melafir/REPO_NAME.git
