@@ -9,13 +9,11 @@ set encoding=utf-8
 set signcolumn=yes
 set splitbelow
 set shell=bash
-colorscheme habamax
 set statusline=%t\ %=\ %Y\ buffers:\ %n - %{NumberOfBuffers()}\ %l-%c
 
 so ~/.config/nvim/setting/plug.vim
 so ~/.config/nvim/setting/tabline.vim
-
-colorscheme codedark
+so ~/.config/nvim/setting/color.vim
 
 set tabline=%!Tabline()
 
