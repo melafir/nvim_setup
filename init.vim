@@ -10,7 +10,7 @@ set encoding=utf-8
 set signcolumn=yes
 set splitbelow
 set shell=bash
-set statusline=%t\ %=\ %Y\ buffers:\ %n - %{NumberOfBuffers()}\ %l-%c
+set statusline=%t\ %=\ %Y\ buffers:\ %n-%{NumberOfBuffers()}\ %l-%c
 set statusline=%t\ %=\ %Y\ buffers:\ %n-%{NumberOfBuffers()}\ %l-%c
 
 so ~/.config/nvim/setting/plug.vim
