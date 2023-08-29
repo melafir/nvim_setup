@@ -1,9 +1,0 @@
-FROM dockstart
-
-RUN cd ~/.config/nvim/coc/extensions/ && npm install coc-rust-analyzer coc-tabnine --only=prod
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-ENV PATH = $PATH:/root/.cargo/env
-
-WORKDIR /root/
-
-CMD ["/bin/bash"]
